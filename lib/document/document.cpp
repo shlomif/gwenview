@@ -495,6 +495,11 @@ void Document::slotUndoIndexChanged()
     }
 }
 
+void Document::selfWasModified()
+{
+    modified(url());
+}
+
 bool Document::isEditable() const
 {
     return d->mImpl->isEditable();

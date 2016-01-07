@@ -205,6 +205,11 @@ public:
      */
     bool isBusy() const;
 
+    /**
+     * call modified() with its own URL.
+     * */
+    void selfWasModified();
+
 Q_SIGNALS:
     void downSampledImageReady();
     void imageRectUpdated(const QRect&);
